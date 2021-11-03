@@ -29,10 +29,14 @@
         <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="index.html" class="nav-link current animation-link"> Студия</a>
+              <a href="index.html" class="nav-link current animation-link">
+                Студия</a
+              >
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link animation-link"> Портфолио</a>
+              <a href="./portfolio.html" class="nav-link animation-link">
+                Портфолио</a
+              >
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link animation-link">Контакты</a>
@@ -41,7 +45,9 @@
         </nav>
         <ul class="contacts-list">
           <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contacts-link animation-link"
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-link animation-link"
               ><svg class="contact-icon" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
@@ -65,7 +71,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="banner-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="banner-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="section">
@@ -86,11 +94,11 @@
             </li>
             <li class="fiatures-icon-item">
               <div class="fiatures-icon">
-              <svg class="icon-fiatures" width="70px" height="70px">
-                <use href="./images/symbol-defs.svg#icon-clock"></use>
-              </svg>
-            </div>
-            <h3 class="features-title">Пунктуальность</h3>
+                <svg class="icon-fiatures" width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="features-title">Пунктуальность</h3>
               <p class="features-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
@@ -98,27 +106,27 @@
             </li>
             <li class="fiatures-icon-item">
               <div class="fiatures-icon">
-              <svg class="icon-fiatures" width="70px" height="70px">
-                <use href="./images/symbol-defs.svg#icon-diagram"></use>
-              </svg>
-            </div>
-            <h3 class="features-title">Планирование</h3>
-            <p class="features-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
+                <svg class="icon-fiatures" width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="features-title">Планирование</h3>
+              <p class="features-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
             </li>
             <li class="fiatures-icon-item">
               <div class="fiatures-icon">
-              <svg class="icon-fiatures" width="70px" height="70px">
-                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-              </svg>
-            </div>
-            <h3 class="features-title">Современные технологии</h3>
-            <p class="features-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
+                <svg class="icon-fiatures" width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="features-title">Современные технологии</h3>
+              <p class="features-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
             </li>
           </ul>
         </div>
@@ -447,12 +455,16 @@
             <p class="addres-footer-text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
               <li class="footer-contacts-item">
-                <a href="mailto:info@example.com" class="footer-contacts-link animation-link"
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-contacts-link animation-link"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a href="tel:+380991111111" class="footer-contacts-link animation-link"
+                <a
+                  href="tel:+380991111111"
+                  class="footer-contacts-link animation-link"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -510,11 +522,65 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form autocomplete="on">
+          <div role="group" aria-labelledby="contact-details">
+            <b id="contact-details" class="modal-titel"
+              >Оставьте свои данные, мы вам перезвоним</b
+            >
+            <label class="border-label">
+              Имя
+              <input
+                class="modal-user-name"
+                type="text"
+                name="user-name"
+                autofocus
+                required
+                minlength="3"
+                title="Имя пользователя должно состоять из двух слов, разделенных пробелом."
+                pattern="^[а-яА-Я]+\s[а-яА-Я]+$"
+              />
+            </label>
+            <label>
+              Телефон
+              <input
+                type="tel"
+                name="phone_number"
+                required
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              />
+            </label>
+            <label>
+              Почта
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Комментарий
+              <textarea
+                class="modal-comment"
+                name="comment"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="checkbox"
+                value="terms-of-an-agreement"
+                required
+              />
+              Соглашаюсь с рассылкой и принимаю Условия договора
+            </label>
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
         <button type="button" class="btn-icon-close" data-modal-close>
-        <svg width="18px" height="18px">
-          <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
-        </svg>
-      </button>
+          <svg width="18px" height="18px">
+            <use
+              href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

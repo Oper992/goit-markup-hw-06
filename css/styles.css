@@ -12,6 +12,7 @@
   --blue-transparent-color: rgba(33, 150, 243, 0.9);
   --backdrop-background-color: rgba(0, 0, 0, 0.2);
   --close-icon-border-color: rgba(0, 0, 0, 0.1);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -250,7 +251,7 @@ header {
   background-color: var(--features-image-item-text-background);
   font-weight: bold;
   font-size: 14px;
-  line-height: 1,14;
+  line-height: 1, 14;
   text-transform: uppercase;
 }
 .features-image {
@@ -454,6 +455,11 @@ header {
   background-color: var(--white-color);
   position: relative;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--gray-text-color);
 }
 .btn-icon-close {
   width: 30px;
@@ -471,6 +477,30 @@ header {
 .btn-icon-close:hover {
   background-color: var(--blue-color);
   fill: var(--white-color);
+}
+.modal-titel {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--black-text-color);
+  margin-bottom: 12px;
+}
+.modal-user-name {
+  display: block;
+  outline: none;
+}
+.modal-comment {
+  display: block;
+  resize: none;
+  width: 100%;
+}
+.modal-comment::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-color);
 }
 /* -------------------portfolio------------------- */
 .filter-list {
