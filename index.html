@@ -518,6 +518,23 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label>
+            <p class="footer-email-text">Подпишитесь на рассылку</p>
+            <input
+              class="footer-email-input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </label>
+          <button class="footer-btn-submit" type="submit">
+            Подписаться
+            <svg class="footer-btn-icon" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -529,7 +546,7 @@
             >
             <label>
               Имя
-              <div class="modal-div">
+              <span class="modal-span">
                 <input
                   class="modal-input-contact"
                   type="text"
@@ -544,11 +561,11 @@
                     href="./images/symbol-defs.svg#icon-person-black-18dp-1"
                   ></use>
                 </svg>
-              </div>
+              </span>
             </label>
             <label>
               Телефон
-              <div class="modal-div">
+              <span class="modal-span">
                 <input
                   class="modal-input-contact"
                   type="tel"
@@ -561,11 +578,11 @@
                     href="./images/symbol-defs.svg#icon-phone-black-18dp-1"
                   ></use>
                 </svg>
-              </div>
+              </span>
             </label>
             <label>
               Почта
-              <div class="modal-div">
+              <span class="modal-span">
                 <input
                   class="modal-input-contact"
                   type="email"
@@ -577,7 +594,7 @@
                     href="./images/symbol-defs.svg#icon-email-black-18dp-1"
                   ></use>
                 </svg>
-              </div>
+              </span>
             </label>
             <label>
               Комментарий
@@ -588,14 +605,14 @@
                 placeholder="Введите текст"
               ></textarea>
             </label>
-            <label class="modal-checkbox">
-              <input
-                class="modal-input-checkbox"
-                type="checkbox"
-                name="checkbox"
-                value="terms-of-an-agreement"
-                required
-              />
+            <input
+              class="modal-input-checkbox visually-hidden"
+              type="checkbox"
+              id="checkbox"
+              value="terms-of-an-agreement"
+              required
+            />
+            <label for="checkbox" class="modal-label-checkbox">
               Соглашаюсь с рассылкой и принимаю
               <a href="#" class="terms-of-an-agreement">Условия договора</a>
             </label>
